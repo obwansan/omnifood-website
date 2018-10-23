@@ -1,3 +1,11 @@
+/*
+Orange colour: #e67e22
+*/
+
+/* ------------------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,25 +21,16 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+/* ------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------------- */
+
 .row {
 /*  max-width: 1165px;*/
   margin: 0 auto;
 }
 
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-}
-
-.hero-text-box {
-  position: absolute;
-  width: 930px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+/* ------ HEADINGS ------ */
 
 h1 {
   margin-top: 0;
@@ -43,6 +42,8 @@ h1 {
   letter-spacing: 1px;
   word-spacing: 4px;
 }
+
+/* ------ BUTTONS ------ */
 
 .btn:link,
 .btn:visited {
@@ -80,15 +81,60 @@ Don't know why as the order doesn't matter for btn-ghost.*/
   color: #fff;
 }
 
+/* ------------------------------------------------- */
+/* HEADER */
+/* ------------------------------------------------- */
 
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
 
+.hero-text-box {
+  position: absolute;
+  width: 990px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-left: 150px;
+  margin-top: 20px;
+}
 
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-right: 135px;
+  margin-top: 55px;
+}
 
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
 
+.main-nav li a:link, 
+.main-nav li a:visited {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 80%; /*Of html font-size 20px*/
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
 
-
-
+.main-nav li a:hover, 
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
 
 
 
